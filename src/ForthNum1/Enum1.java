@@ -13,7 +13,7 @@ public class Enum1 {
         AUTUMN(+3);
         private final int temp;
         //Constructor of Season
-        private Seasons(int temp)
+        Seasons(int temp)
         {
             this.temp = temp;
         }
