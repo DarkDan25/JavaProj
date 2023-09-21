@@ -4,7 +4,12 @@ public class Enum1 {
     public enum Seasons{
         WINTER(-5),
         SPRING(+8),
-        SUMMER(+20),
+        SUMMER(+20){
+            @Override
+            public String getDescription() {
+                return "Warm season";
+            }
+        },
         AUTUMN(+3);
         private final int temp;
         //Constructor of Season
@@ -12,8 +17,13 @@ public class Enum1 {
         {
             this.temp = temp;
         }
-        public int getTemp() {
-            return this.temp;
+        public String getTemp() {
+            return "Temp:" +this.temp;
+        }
+
+        public String getDescription()
+        {
+            return "Cold season";
         }
     }
     public String infoSeason(Seasons season)
