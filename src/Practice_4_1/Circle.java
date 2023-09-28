@@ -1,7 +1,7 @@
 package Practice_4_1;
 
 public class Circle extends Shape {
-    public String name = "Circle";
+    String name = "Circle";
     int radius;
     public Circle(int radius) {
         super();
