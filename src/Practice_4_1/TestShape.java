@@ -6,5 +6,6 @@ public class TestShape {
         Shape sh1 = new Circle(3);
         Shape sh2 = new Square();
         Shape sh3 = new Rectangle();
+        System.out.println(sh1.toString());
     }
 }

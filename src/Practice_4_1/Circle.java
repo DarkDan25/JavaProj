@@ -13,12 +13,16 @@ public class Circle extends Shape {
     }
 
     @Override
-    public String getPerimeter() {
-        return "Circle perimeter is " + Math.PI*2*radius;
+    public double getPerimeter() {
+        return Math.PI*2*radius;
+    }
+    @Override
+    public double getArea() {
+        return Math.pow(radius,2)*Math.PI;
     }
 
     @Override
-    public String getArea() {
-        return "Circle area is " + Math.pow(radius,2)*Math.PI;
+    public String toString() {
+        return (super.toString() + getType() + "\nIt's area is " + getArea() + "\nIt's perimeter is " + getPerimeter());
     }
 }

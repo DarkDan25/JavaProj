@@ -5,15 +5,18 @@ public class Shape {
     {
         return "Shape";
     }
-    public String getPerimeter()
+    public double getPerimeter()
     {
-        return "Perimeter";
+        return 0;
     }
-    public String getArea()
+    public double getArea()
     {
-        return "Area";
+        return 0;
     }
     public Shape() {
-
+    }
+    @Override
+    public String toString() {
+        return "Your shape is ";
     }
 }
