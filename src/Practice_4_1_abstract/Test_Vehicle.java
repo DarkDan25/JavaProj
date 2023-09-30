@@ -3,7 +3,6 @@ package Practice_4_1_abstract;
 
 public class Test_Vehicle {
     public static void main(String[] args) {
-        Car car = new Car(100,50);
-        car.CostOfRoad();
+        Ship ship = new Ship(200,30);
     }
 }
