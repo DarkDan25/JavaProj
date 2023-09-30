@@ -16,7 +16,7 @@ public class Car extends Vehicle{
 
     @Override
     void timeOfTrip() {
-
+        System.out.println("Your trip by car lasts "+ getDistance()/getSpeed() + " hours");
     }
 
     public void setCountOfBill(int countOfBill) {

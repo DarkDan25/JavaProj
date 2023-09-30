@@ -16,6 +16,6 @@ public class Plane extends Vehicle{
 
     @Override
     void timeOfTrip() {
-
+        System.out.println("Your trip by plane lasts "+ getDistance()/getSpeed() + " hours");
     }
 }

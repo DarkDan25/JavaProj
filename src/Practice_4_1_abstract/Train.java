@@ -4,6 +4,7 @@ public class Train extends Vehicle{
     double cost;
     double costPerKm = 5;
     double costOfStop = 2;
+    double timeOfStops = 0.2; //Hours
     int numOfStops = 0;
     public Train(double distance, double speed) {
         super(distance,speed);
@@ -17,7 +18,7 @@ public class Train extends Vehicle{
 
     @Override
     void timeOfTrip() {
-
+        System.out.println("Your trip by train lasts "+ (getDistance()/getSpeed()+timeOfStops*numOfStops) + " hours");
     }
 
     public void setNumOfStops(int numOfStops) {

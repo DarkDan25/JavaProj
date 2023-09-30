@@ -17,7 +17,7 @@ public class Ship extends Vehicle{
 
     @Override
     void timeOfTrip() {
-
+        System.out.println("Your trip by car lasts "+ getDistance()/getSpeed() + " hours and "+ days + " days");
     }
 
     public void setDays(int days) {
