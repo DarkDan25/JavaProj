@@ -9,14 +9,8 @@ public abstract class Vehicle {
         this.distance = distance;
         this.speed = speed;
     }
-    public void setDistance(int distance) {
-        this.distance = distance;
-    }
     public double getDistance() {
         return distance;
-    }
-    public void setSpeed(float speed) {
-        this.speed = speed;
     }
     public double getSpeed() {
         return speed;
