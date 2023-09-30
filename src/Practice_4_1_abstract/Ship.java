@@ -4,4 +4,9 @@ public class Ship extends Vehicle{
     public Ship(int distance, float speed) {
         super(distance,speed);
     }
+
+    @Override
+    void CostOfRoad() {
+
+    }
 }

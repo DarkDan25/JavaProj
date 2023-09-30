@@ -4,4 +4,9 @@ public class Train extends Vehicle{
     public Train(int distance, float speed) {
         super(distance,speed);
     }
+
+    @Override
+    void CostOfRoad() {
+
+    }
 }
