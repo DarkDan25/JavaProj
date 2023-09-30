@@ -1,17 +1,18 @@
 package Practice_4_1_abstract;
 
 public abstract class Vehicle {
-    protected int distance;
+    protected double distance;
     protected double speed;
     abstract void CostOfRoad();
-    public Vehicle(int distance, float speed) {
+    abstract void timeOfTrip();
+    public Vehicle(double distance, double speed) {
         this.distance = distance;
         this.speed = speed;
     }
     public void setDistance(int distance) {
         this.distance = distance;
     }
-    public int getDistance() {
+    public double getDistance() {
         return distance;
     }
     public void setSpeed(float speed) {

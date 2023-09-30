@@ -1,18 +1,24 @@
 package Practice_4_1_abstract;
 
 public class Car extends Vehicle{
-    double cost;
-    double costPerKM;
-    double BillRoadCost = 0;
-    int countOfBill = 0;
-    public Car(int distance, float speed) {
+    double cost; //Full cost of trip
+    double costPerKM = 2; //How much will cost riding through whole road
+    double BillRoadCost = 3;//How much cost to pass through special post
+    int countOfBill = 0; //Amount of passed special posts
+    public Car(double distance, double speed) {
         super(distance,speed);
     }
-    @Override
+    @Override //Calculate whole cost of the trip
     void CostOfRoad() {
         cost = (getDistance() * costPerKM) + (countOfBill * BillRoadCost);
-        System.out.println(cost);
+        System.out.println("Trip by car costs "+cost);
     }
+
+    @Override
+    void timeOfTrip() {
+
+    }
+
     public void setCountOfBill(int countOfBill) {
         this.countOfBill = countOfBill;
     }
