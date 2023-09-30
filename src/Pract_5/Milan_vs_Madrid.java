@@ -1,10 +1,11 @@
 package Pract_5;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class Milan_vs_Madrid {
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Milan VS Madrid");
+        MyFrame frame = new MyFrame();
     }
 
 }
