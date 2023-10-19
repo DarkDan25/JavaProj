@@ -1,11 +1,11 @@
 package Pract_8_7;
 
 public class ProstMnozh {
-    float b = 2;
-    float Prost(float a){
+    int b = 2;
+    float Prost(int a){
         if(a%b==0){
             a=a/b;
-            System.out.println(b);
+            System.out.print(b+" ");
         }
         else {
             b++;
