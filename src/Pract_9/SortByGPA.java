@@ -3,7 +3,12 @@ package Pract_9;
 public class SortByGPA implements Comparator{
     @Override
     public void QSort(Student[] k, int start, int end) {
-
+        if (start < end)
+        {
+            int pivotIndex = partition(k, start, end);
+            QSort(k, start, pivotIndex - 1);
+            QSort(k, pivotIndex + 1, end);
+        }
     }
     void swap(Student arr[],int i,int j) {
         Student temporary = arr[i];
@@ -21,7 +26,6 @@ public class SortByGPA implements Comparator{
             }
         }
         swap(arr, i+1, end);
-        //swap(&array[i + 1], &array[upper]);//finally, swapping the pivot and the element in the position at which pivot is supposed to be
         return (i + 1);
     }
 }
