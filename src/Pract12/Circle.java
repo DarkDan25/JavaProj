@@ -3,8 +3,8 @@ package Pract12;
 public class Circle extends Shape {
     String name = "Circle";
     int radius;
-    public Circle(int radius, double posX, double posY) {
-        super(posX, posY);
+    public Circle(int radius, double posX, double posY,int Red,int Green,int Blue) {
+        super(posX, posY,Red,Green,Blue);
         this.radius = radius;
     }
     @Override
@@ -24,5 +24,9 @@ public class Circle extends Shape {
     @Override
     public String toString() {
         return (super.toString() + getType() + "\nIt's area is " + getArea() + "\nIt's perimeter is " + getPerimeter());
+    }
+
+    public int getRadius() {
+        return radius;
     }
 }

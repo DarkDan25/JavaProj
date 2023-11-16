@@ -3,8 +3,8 @@ package Pract12;
 public class Square extends Shape {
     String name = "Square";
     int a;
-    public Square(int a,double posX, double posY) {
-        super(posX, posY);
+    public Square(int a,double posX, double posY,int Red,int Green,int Blue) {
+        super(posX, posY,Red,Green,Blue);
         this.a=a;
     }
 
@@ -26,5 +26,9 @@ public class Square extends Shape {
     @Override
     public String toString() {
         return (super.toString()+ getType() + "\nIt's area is "+ getArea()+ "\nIt's perimeter is "+getPerimeter());
+    }
+
+    public int getA() {
+        return a;
     }
 }

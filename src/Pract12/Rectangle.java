@@ -2,11 +2,10 @@ package Pract12;
 
 public class Rectangle extends Shape {
     String name = "Rectangle";
-    double a;
-    double b;
-
-    public Rectangle(double a, double b, double posX, double posY) {
-        super(posX,posY);
+    int a;
+    int b;
+    public Rectangle(int a, int b, double posX, double posY,int Red,int Green,int Blue) {
+        super(posX,posY,Red,Green,Blue);
         this.a = a;
         this.b = b;
     }
@@ -29,5 +28,13 @@ public class Rectangle extends Shape {
     @Override
     public String toString() {
         return super.toString() + getType() + "\nIt's area is " + getArea()+"\nit's perimeter "+getPerimeter();
+    }
+
+    public int getA() {
+        return a;
+    }
+
+    public int getB() {
+        return b;
     }
 }
